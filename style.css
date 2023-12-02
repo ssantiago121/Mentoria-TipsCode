@@ -1,0 +1,179 @@
+/* ==================== SEÇÃO TAG ==================== */
+
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+h1, h3, ul, p {
+    margin: 0px;
+}
+
+
+ul {
+    padding: 0px;
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+
+button, img {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* ==================== HEADER E NAVBAR ==================== */
+
+
+.header-bg {
+    background-color: #E2E6F2;
+}
+
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px 2em 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.header-menu{
+    display: flex;
+    gap: 20px;
+}
+
+
+.header-menu a {
+    color: #4B525B;
+    padding: 10px 10px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+
+}
+
+
+/* Aplicando efeito de cor na bolsa */
+.header a span{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+
+/* Aplicando efeito de cor quando houver evento na navbar */
+.header-menu a:hover {
+    color: #037D72;;
+}
+
+
+.header-menu a:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: #037D72;
+    margin-top: 4px;
+    transition: 0.3s;
+    position: relative;
+}
+
+
+.header-menu a:hover:after {
+    width: 50%;
+}
+
+
+/* ==================== MAIN ==================== */
+
+/* Caixa de texto e imagem do Professor Alisson */
+
+.offers-bg {
+    background-color: #E2E6F2;
+}
+
+
+.offers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+    box-sizing: border-box;
+    padding-top: 80px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+
+.features {
+    position: relative;
+    color: #037D72;
+}
+
+
+.offers h1 {
+    grid-column: 1;
+    margin-bottom: 32px;
+    font-size: 48px;
+    line-height: 1.12;
+}
+
+
+.offers h3 {
+    color: #6B686F;
+    grid-column: 1;
+    margin-bottom: 16px;
+
+}
+
+
+.offers p {
+    grid-column: 1;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #B1B5C1;
+}
+
+
+.offers a {
+    display: inline-block;
+    padding: 32px 64px;    
+    background: url(img/button.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.offers img {
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
